@@ -1,0 +1,10 @@
+<div>
+    <h1>{{user.name}}</h1>
+    <p>{{user.age}} </p>
+    <img [src]=" user.image " alt="err">
+</div>
+
+<br>
+
+<input type="text" [(ngModel)]="myname">
+<button (click)="change()">Click me</button>
