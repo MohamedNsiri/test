@@ -1,0 +1,9 @@
+<div *ngFor="let item of _shared.heros" class="-translate-y-[140px]">
+    <div class=" bg-dark-cerulean rounded-xl p-5 h-[250px] shadow">
+        <div>
+            <img class="rounded-xl" [src]=" item.image" alt="blabla" >
+        </div>
+        <h1 class="mt-5 mb-2 font-bold text-white ">{{item.name}}</h1>
+        <p>{{item.power}}</p>
+    </div>
+</div>

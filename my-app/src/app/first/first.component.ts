@@ -7,17 +7,22 @@ import { Component } from '@angular/core';
 })
 
 export class FirstComponent {
-
-  user = {
-    name: "John Joe",
-    age: 69,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcR5U16C8yXgBpl7-Bc7Itjx3_LRl425zINA&s"
+  hero =  {
+    name: '',
+    power: 0,
+    image: ''
   }
 
-  myname = '';
+  heros :any[] = [];
 
-  change(){
-    this.user.name = this.myname;
+  ajout(){
+    this.heros.push ( this.hero );
+    this.hero = {
+      name: '',
+      power: 0,
+      image: ''
+    }
+
+    console.log(this.heros)
   }
-
 }

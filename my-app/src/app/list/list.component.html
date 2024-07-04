@@ -1,0 +1,12 @@
+<div>
+    <input [(ngModel)]="hero.name" class=" text-center rounded-[10px] shadow-inner ring-2 ring-transparent focus:ring-4 focus:ring-cerulean h-10" type="text">
+</div>
+<div>
+    <input [(ngModel)]="hero.power" class=" text-center rounded-[10px] shadow-inner ring-2 ring-transparent focus:ring-4 focus:ring-cerulean h-10"  type="text">
+</div>
+<div>
+    <input [(ngModel)]="hero.image" class=" text-center rounded-[10px] shadow-inner ring-2 ring-transparent focus:ring-4 focus:ring-cerulean h-10"  type="text">
+</div>
+<div class="col-span-1">
+    <button (click)="ajout()" class=" text-center w-full h-10 bg-cerulean rounded-[10px] text-white hover:bg-dark-cerulean">Generate</button>
+</div>

@@ -1,10 +1,12 @@
-<div>
-    <h1>{{user.name}}</h1>
-    <p>{{user.age}} </p>
-    <img [src]=" user.image " alt="err">
+<h1>HEROES APP</h1>
+
+<div class="flex justify-center items-center">
+    <div class="grid grid-cols-4 grid-rows-3 gap-4 p-5 w-[800px] h-[700px] bg-indigo-500 rounded-3xl">
+        
+        <app-list></app-list>
+
+        <app-card></app-card>
+        
+    </div>
 </div>
 
-<br>
-
-<input type="text" [(ngModel)]="myname">
-<button (click)="change()">Click me</button>
